@@ -24,3 +24,7 @@ function handleCardButtonClick(event) {
 cardButtons.forEach((button) =>
   button.addEventListener("click", handleCardButtonClick)
 );
+
+function closeModal() {
+  modalOuter.classList.remove("open");
+}
