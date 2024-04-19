@@ -28,3 +28,10 @@ cardButtons.forEach((button) =>
 function closeModal() {
   modalOuter.classList.remove("open");
 }
+
+modalOuter.addEventListener("click", function (event) {
+  const isOutside = !event.target.closest(".modal-inner");
+  if (isOutside) {
+    closeModal();
+  }
+});
