@@ -20,3 +20,7 @@ function handleCardButtonClick(event) {
   // show the modal
   modalOuter.classList.add("open");
 }
+
+cardButtons.forEach((button) =>
+  button.addEventListener("click", handleCardButtonClick)
+);
