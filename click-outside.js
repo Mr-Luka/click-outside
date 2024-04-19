@@ -35,3 +35,10 @@ modalOuter.addEventListener("click", function (event) {
     closeModal();
   }
 });
+
+window.addEventListener("keydown", (event) => {
+  console.log(event);
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
